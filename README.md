@@ -125,7 +125,7 @@ Also I made it expandable for any custom field you want to setup, just develop i
 
 You can override the default elements by using the same name and placing it inside your theme folder (see above for specific path)
 
-##How can it use these values?##
+##How can i use these values?##
 
 All the values will be available in a View variable called $theme (array) formated this way:
 ````
@@ -147,7 +147,7 @@ $theme
 - Activate your theme
 - Go to: Settings / EcoEngine (menu on the left)
 - Check that your theme declares support for EcoEngine, and that it is not installed yet.
-- Click install (if something goes wrong during development you can always uninstall all values by clicking "unset all", then you can reinstall)
+- Click install (if something goes wrong during development you can always uninstall all values by clicking "unset all"), then you can reinstall)
 - Go to: Extensions/Themes/Settings
 - Check that all fields are displayed correctly
 - Enjoy
