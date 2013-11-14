@@ -158,13 +158,15 @@ $theme
 - Create new element named after the reference you want to use for this field, lets say "color" so you place it in {yourTheme}/Elements/color.ctp
 - Check out the provided element to understand whats going on
 - The plugin will pass some variables that will be available in your element, these are:
-````
-$id - The internal pointer to where the field value is saved (ie: 190)
-$key - The key where the value is saved (ie: EcoEngine.{yourTheme}.Group.BgColor)
-$value - The value saved (ie: #000000)
-$field - An array containing the values from your EcoEngine.json for this field
 
 ````
+    $id - The internal pointer to where the field value is saved (ie: 190)
+    $key - The key where the value is saved (ie: EcoEngine.{yourTheme}.Group.BgColor)
+    $value - The value saved (ie: #000000)
+    $field - An array containing the values from your EcoEngine.json for this field
+
+````
+
 - If you are creating a complex element/field, check out the callback section in the default file element to manipulate the data returned in the way you need using Javascript/jQuery
 - Save it
 - Reference it in your EcoEngine.json file
