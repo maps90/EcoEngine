@@ -1,0 +1,9 @@
+form .tab-pane .after{
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    color: #999;
+    margin-top:-9px;
+}
+form .tab-pane .input.file .after{
+    margin-top:-4px;
+}

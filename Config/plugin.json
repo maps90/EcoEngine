@@ -1,0 +1,17 @@
+{
+	"name": "EcoEngine",
+	"description": "Theme admin section",
+
+	"author": "ecoreng",
+	"authorEmail": "me@ecor.me",
+	"authorUrl": "http://ecor.me",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions",
+                        "nodes",
+                        "file_manager"
+		]
+	}
+}
