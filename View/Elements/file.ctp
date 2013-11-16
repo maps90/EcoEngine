@@ -17,7 +17,7 @@ echo $this->Form->input($name . '.id', array('type' => 'hidden', 'default' => $i
             'class' => 'btn btn-success',
             'onclick' => "window.open('" . $this->Html->url(array(
                 'plugin' => 'EcoEngine',
-                'controller' => 'Settings',
+                'controller' => 'EcoSettings',
                 'action' => 'attachments',
                 'admin' => true,
                 '?' => array('multi' => 0, 'returnTo' => $name.'Value')
