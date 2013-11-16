@@ -2,7 +2,7 @@
 
 App::uses('EcoEngineAppController', 'EcoEngine.Controller');
 
-class SettingsController extends EcoEngineAppController
+class EcoSettingsController extends EcoEngineAppController
 {
 
     public $settingsPrefix = '';
