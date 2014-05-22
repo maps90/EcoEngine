@@ -1,5 +1,6 @@
 <?php
-    $name = end(explode('.', $key));
+    $name = explode('.', $key);
+	$name = end($name);
     $field['cakeField']['value'] = $value;
     if(isset($field['explain'])) {
         $field['cakeField']['after'] = '<div class="after">' . $field['explain'] . "</div>";

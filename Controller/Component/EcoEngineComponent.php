@@ -8,7 +8,7 @@ class EcoEngineComponent extends Component
     public $Setting;
     public $settingsPrefix = 'EcoEngine';
 
-    public function initialize(Controller &$Controller)
+    public function initialize(Controller $Controller)
     {
         // cambiar esto al modelo de settings, porque esto se ondea
         $this->Setting = ClassRegistry::init('Settings.Setting');
