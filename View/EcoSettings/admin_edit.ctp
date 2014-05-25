@@ -1,4 +1,5 @@
 <?php
+$this->theme = $theme['EcoEngine']['theme'];
 $this->Html->script('/EcoEngine/js/SettingUtility.js', false);
 $this->extend('/Common/admin_edit');
 echo $this->Html->css('/EcoEngine/css/fields.css', null, array('inline' => false));
@@ -36,14 +37,11 @@ $this->Form->inputDefaults(array(
                     <?php
                     $data = $this->EcoEngine->element($field['type'], $theme['EcoEngine']['theme']);
                     // Bypass Croogo admin theme limitation by setting the theme manually
-                    $this->theme = $data['theme'];
                     echo $this->element(
                             $data['element']
                             , array('id' => $setting['id'], 'key' => $setting['key'], 'value' => $setting['value'], 'field' => $field));
                     // and then unsetting it
-                    $this->theme = null;
                     ?>
-                    
                     <?php
                 }
                 ?>
@@ -63,6 +61,7 @@ $this->Form->inputDefaults(array(
         echo $this->Html->endBox();
 
         echo $this->Croogo->adminBoxes();
+        $this->theme = Configure::read('Site.admin_theme');
         ?>
     </div>
 </div>
